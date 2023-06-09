@@ -1,3 +1,4 @@
+import Footer from "@/components/atoms/Footer";
 import FreelanceBanner from "@/components/atoms/FreelanceBanner";
 import About from "@/components/layout/About";
 import Contact from "@/components/layout/Contact";
@@ -21,6 +22,7 @@ export default function Home() {
       <MyWork/>
       <FreelanceBanner/>
       <Contact/>
+      <Footer/>
     </main>
   );
 }

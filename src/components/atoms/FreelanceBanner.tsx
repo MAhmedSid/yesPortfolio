@@ -16,14 +16,14 @@ const poppins = Poppins({
 
 const FreelanceBanner = () => {
   return (
-      <Parallax className="parallax" bgImage="/banner.jpg" bgImageAlt="Personal Website" strength={400}>
+      <Parallax className="parallax mt-20" bgImage="/banner.jpg" bgImageAlt="Personal Website" strength={400}>
     <div className="freelance-banner-bg flex h-80 flex-col items-center justify-center gap-y-4  text-white">
       <h3
         className={`text-[40px] font-extrabold tracking-wide ${poppins.className}`}
       >
         I'm <span className="text-[#a0f669]">Available</span> for freelancing
       </h3>
-      <p className="w-[50%] text-center">
+      <p className="w-[40%] text-center">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
         voluptatibus eaque molestias omnis, corrupti sequi vero aperiam numquam
         dolores itaque!

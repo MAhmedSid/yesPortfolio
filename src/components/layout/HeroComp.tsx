@@ -18,7 +18,7 @@ const HeroComp = () => {
             M. Ahmed Siddiqui
           </h1>
           <AniText />
-          <Link href="#Skills">
+          <Link href="#About">
             <button className="rhombus mt-56 flex items-center justify-center px-6 py-6">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
