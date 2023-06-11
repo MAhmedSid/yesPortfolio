@@ -28,7 +28,7 @@ const About = () => {
             // width={0}
             // sizes="100%"
             alt="Muhammad Ahmed Siddiqui"
-            className="h-[140px] w-[140px] md:h-[200px] md:w-[200px] rounded-full"
+            className="pointer-events-none h-[140px] w-[140px] md:h-[200px] md:w-[200px] rounded-full"
           />
           <h2 className="who-am-i flex flex-col pt-10 text-2xl font-bold">
             Who Am I ?
