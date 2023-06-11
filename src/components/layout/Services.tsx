@@ -26,18 +26,18 @@ const Services = () => {
       id="Services"
       className={`flex flex-col items-center justify-center pt-40 text-center ${poppins.className}`}
     >
-      <h2 className="text-6xl font-black">Services</h2>
+      <h2 className="text-4xl md:text-6xl font-black">Services</h2>
       <div
         className={`flex flex-col gap-y-3  pt-20 text-center text-xl font-extrabold ${barlowC.className}`}
       >
-        <p className="max-w-[60rem]">
+        <p className="w-full px-4 md:w-auto md:max-w-[60rem]">
           {" "}
           Do you want to stand out in the digital world with a modern and
           professional website? Do you need a fullstack web developer who can
           handle everything from design to deployment?
         </p>
         <p>-</p>
-        <p className={`max-w-[60rem]`}>
+        <p className={`w-full px-4 md:w-auto md:max-w-[60rem]`}>
           Then you need me. I have the skills and experience to create stunning
           websites that are fast, secure, and user friendly. Whether you need a
           landing page, an e-commerce site, a blog, or an{" "}

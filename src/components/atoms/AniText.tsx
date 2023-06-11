@@ -4,7 +4,7 @@ import { TypeAnimation } from "react-type-animation";
 
 const AniText= ()=>{
   return (
-    <p className='text-[32px] font-extrabold mt-4'>
+    <p className='text-center text-xl h-6 md:text-[32px] font-extrabold mt-4'>
     <span>Expert in {" "}</span>
     <TypeAnimation
       defaultValue="Jam Stack Development"

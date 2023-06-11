@@ -27,8 +27,8 @@ const MyWork = async () => {
 
 
   return (
-    <div id="Portfolio" className="flex mt-32 max-w-[100vw] min-h-[40vh] flex-col items-center justify-center">
-      <h2 className="pb-5 text-6xl font-extrabold">My Works</h2>
+    <div id="Portfolio" className="flex pt-32 max-w-[100vw] min-h-[40vh] flex-col items-center justify-center">
+      <h2 className="pb-5 text-4xl md:text-6xl font-extrabold">My Works</h2>
 
       <Tabs defaultValue="all" className="mt-20 w-full">
         <TabsList className="flex justify-center bg-transparent ">

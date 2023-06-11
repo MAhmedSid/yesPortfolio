@@ -10,7 +10,7 @@ import Link from "next/link";
 
 const barlowC = Barlow({
   subsets: ["latin"],
-  weight: ["500"],
+  weight: ["400"],
   preload: true,
   adjustFontFallback: true,
   style: "normal",
@@ -19,13 +19,16 @@ const barlowC = Barlow({
 
 const About = () => {
   return (
-    <div id="About" className="flex justify-center">
+    <div id="About" className="flex justify-center px-4 md:px-0 pt-24 md:pt-0">
       <MainWrapper>
         <div className="flex md:h-[100vh] flex-col justify-center">
           <img
             src="/profiletwo.webp"
+            // height={0}
+            // width={0}
+            // sizes="100%"
             alt="Muhammad Ahmed Siddiqui"
-            className="h-[200px] w-[200px] rounded-full"
+            className="h-[140px] w-[140px] md:h-[200px] md:w-[200px] rounded-full"
           />
           <h2 className="who-am-i flex flex-col pt-10 text-2xl font-bold">
             Who Am I ?

@@ -83,13 +83,13 @@ const Contact = () => {
   };
 
   return (
-    <div id="Contact" className="flex flex-col mt-36 items-center justify-center">
+    <div id="Contact" className="flex flex-col pt-36 items-center justify-center">
       <MainWrapper>
         <div>
           <Toaster />
         </div>
         <div className="flex w-full flex-col items-center justify-center">
-          <h2 className="mb-8  text-6xl font-extrabold">Contact Me</h2>
+          <h2 className="mb-8  text-4xl md:text-6xl font-extrabold">Contact Me</h2>
           <p className="mb-16 text-center text-secondaryBlack w-full px-4 md:w-[70%]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
             tenetur at corporis repellendus ipsum temporibus, perferendis quam
