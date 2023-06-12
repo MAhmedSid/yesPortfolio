@@ -33,13 +33,13 @@ const Skills = () => {
   return (
     <div
       id="Skills"
-      className="flex  w-screen items-center justify-center "
+      className="flex  w-full items-center justify-center "
     >
       <MainWrapper>
-        <div className="flex w-full  flex-col ">
-          <div className="main-div  flex flex-col md:flex-row w-full md:overflow-y-clip overflow-y-auto">
+        <div className="flex w-full  flex-col overflow-hidden md:overflow-auto ">
+          <div className="mainDiv flex flex-col md:flex-row w-full md:overflow-y-clip ">
             <div className="left  md:sticky  md:top-0 md:h-[200px] md:flex-[0.3]">
-              <ul className="flex w-full   flex-col justify-center gap-y-4 ">
+              <ul className="flex w-full flex-col justify-center gap-y-4 ">
                 <h2 className=" main-heading pb-5 pt-20 text-4xl md:text-6xl font-extrabold text-center md:text-left">
                   Technical Skills
                 </h2>
@@ -60,11 +60,11 @@ const Skills = () => {
               </ul>
             </div>
 
-            <div className="right flex md:flex-[0.7] overflow-x-hidden  items-center flex-col md:pl-10  pt-20 md:pt-60 ">
-              <Element name="section_1" className="section pb-20">
+            <div className="right flex md:flex-[0.7] items-center max-w-[100%] flex-col md:pl-10  pt-20 md:pt-60 ">
+              <Element name="section_1" className="section    pb-20 ">
                 <div className="flex w-full flex-col gap-y-10">
                   <SkillType firstLetter="C" restWord="ore Stack" />
-                  <div className="grid grid-cols-2 md:grid-cols-3 gap-x-5 gap-y-5">
+                  <div className="w-full grid grid-cols-2 md:grid-cols-3 gap-x-5 gap-y-5">
                     <SkillCard
                       text="HTML"
                       icon={<AiFillHtml5 className="text-6xl md:text-7xl " />}
@@ -101,10 +101,10 @@ const Skills = () => {
                 </div>
               </Element>
 
-              <Element name="section_2" className="section pb-20">
+              <Element name="section_2" className="section    pb-20">
                 <div className="flex flex-col gap-y-10">
                   <SkillType firstLetter="F" restWord="rameworks" />
-                  <div className="grid grid-cols-2 md:grid-cols-3 gap-x-5 gap-y-5">
+                  <div className="w-full grid grid-cols-2 md:grid-cols-3 gap-x-5 gap-y-5">
                     <SkillCard
                       text="REACT"
                       icon={<FaReact className="text-6xl md:text-7xl " />}
@@ -117,10 +117,10 @@ const Skills = () => {
                 </div>
               </Element>
 
-              <Element name="section_3" className="section pb-20">
+              <Element name="section_3" className="section    pb-20">
                 <div className="flex flex-col gap-y-10">
                   <SkillType firstLetter="H" restWord="eadless CMS" />
-                  <div className="grid grid-cols-2 md:grid-cols-3 gap-x-5 gap-y-5">
+                  <div className="w-full grid grid-cols-2 md:grid-cols-3 gap-x-5 gap-y-5">
                     <SkillCard
                       text="Wordpress"
                       icon={<FaWordpressSimple className="text-6xl md:text-7xl " />}
@@ -137,10 +137,10 @@ const Skills = () => {
                 </div>
               </Element>
 
-              <Element name="section_4" className="section pb-20">
+              <Element name="section_4" className="section    pb-20">
                 <div className="flex flex-col gap-y-10">
                   <SkillType firstLetter="D" restWord="atabases" />
-                  <div className="grid grid-cols-2 md:grid-cols-3 gap-x-5 gap-y-5">
+                  <div className="w-full grid grid-cols-2 md:grid-cols-3 gap-x-5 gap-y-5">
                     <SkillCard
                       text="Postgresql"
                       icon={<DiPostgresql className="text-6xl md:text-7xl " />}

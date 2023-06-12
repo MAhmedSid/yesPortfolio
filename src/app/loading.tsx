@@ -5,9 +5,8 @@ const loading = () => {
     <div className='flex flex-col justify-center items-center h-screen w-screen'>
       <svg
       xmlns="http://www.w3.org/2000/svg"
-      style={{ margin: "auto", background: "#fff" }}
-      width="200"
-      height="200"
+      style={{ background: "#fff" }}
+      className='md:w-[200px] md:h-[200px] w-[100px] h-[100px]'
       display="block"
       preserveAspectRatio="xMidYMid"
       viewBox="0 0 100 100"

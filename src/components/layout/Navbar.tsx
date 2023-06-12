@@ -7,8 +7,20 @@ import Link from "next/link";
 import { slide as Menu } from "react-burger-menu";
 import useClientWindowWidth from "../hooks/useClientWindowWidth";
 import { Sling as Hamburger } from "hamburger-react";
+import { Barlow } from "next/font/google";
 
 const links = ["About", "Skills", "Services", "Portfolio", "Contact"];
+
+
+
+const barlowC = Barlow({
+  subsets: ["latin"],
+  weight: ["400"],
+  preload: true,
+  adjustFontFallback: true,
+  style: "normal",
+  fallback: ["system-ui", "arial"],
+});
 
 const Navbar = () => {
   const width = useClientWindowWidth();
@@ -17,7 +29,7 @@ const Navbar = () => {
   return (
     <nav className="flex w-full flex-[0.1] items-center justify-center  ">
       <MainWrapper>
-          {width > 768 && (
+          {width > 768 ? (
             <>
         <div className="flex md:items-center md:justify-between md:gap-x-5">
               <Logo />
@@ -32,8 +44,10 @@ const Navbar = () => {
               </ul>
                 </div>
             </>
-          )}
-          {width <= 768 && (
+          ):           
+          
+          
+          
             <>
               <div
                 className={`z-[3000] flex w-full fixed bg-white py-2 top-0 ${sideBarOpen ? "":"backdrop-blur-lg bg-opacity-80"}`}
@@ -65,7 +79,7 @@ const Navbar = () => {
                 <ul className="flex list-none flex-col items-center justify-center ">
                   {links.map((link) => (
                     <Link onClick={() => setSideBarOpen(false)} key={link} href={`#${link}`}>
-                      <li  className="mt-3 border-b-2 border-b-transparent  text-center text-2xl tracking-wider hover:border-b-primaryBlue hover:transition-all hover:duration-150 hover:ease-in-out md:text-xl ">
+                      <li  className={`mt-5 uppercase border-b-2 border-b-transparent  text-center text-3xl tracking-wider hover:border-b-primaryBlue hover:transition-all hover:duration-150 hover:ease-in-out md:text-xl ${barlowC.className}`}>
                         {link}
                       </li>
                     </Link>
@@ -73,7 +87,9 @@ const Navbar = () => {
                   </ul>
               </Menu>
             </>
-          )}
+          }
+          {/* {width <= 768 && (
+          )} */}
       </MainWrapper>
     </nav>
   );

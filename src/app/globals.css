@@ -40,6 +40,7 @@ height: 100vh !important;
 }
 
 html {
+  -webkit-tap-highlight-color: transparent;
   scroll-behavior: smooth !important;
   user-select: none;
   max-width: 100vw;
