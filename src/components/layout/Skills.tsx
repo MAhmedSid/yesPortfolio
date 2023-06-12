@@ -31,8 +31,8 @@ const Skills = () => {
   return (
     <div id="Skills" className="flex  w-full items-center justify-center ">
       <MainWrapper>
-        <div className="flex w-full  flex-col overflow-hidden md:overflow-auto ">
-          <div className="mainDiv flex w-full flex-col md:flex-row md:overflow-y-clip ">
+        <div className="flex w-full  flex-col overflow-x-hidden md:overflow-x-clip ">
+          <div className="mainDiv flex  flex-col md:flex-row md:overflow-y-clip ">
             <div className="left  md:sticky  md:top-0 md:h-[200px] md:flex-[0.3]">
               <ul className="flex w-full flex-col justify-center gap-y-4 ">
                 <h2 className=" main-heading pb-5 pt-20 text-center text-4xl font-extrabold md:text-left md:text-6xl">
