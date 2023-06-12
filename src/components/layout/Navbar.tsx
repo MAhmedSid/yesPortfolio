@@ -4,8 +4,9 @@ import Logo from "../atoms/Logo";
 import MainWrapper from "../wrappers/MainWrapper";
 import Link from "next/link";
 
+import { useWindowWidth } from "@react-hook/window-size";
 import { slide as Menu } from "react-burger-menu";
-import useClientWindowWidth from "../hooks/useClientWindowWidth";
+// import useClientWindowWidth from "../hooks/useClientWindowWidth";
 import { Sling as Hamburger } from "hamburger-react";
 import { Barlow } from "next/font/google";
 
@@ -23,7 +24,8 @@ const barlowC = Barlow({
 });
 
 const Navbar = () => {
-  const width = useClientWindowWidth();
+  const width= useWindowWidth()
+  // const width = useClientWindowWidth();
   const [sideBarOpen, setSideBarOpen] = useState(false);
 
   return (
