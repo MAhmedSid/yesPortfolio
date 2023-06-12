@@ -1,22 +1,40 @@
+"use client";
 import React from "react";
 import MainWrapper from "../wrappers/MainWrapper";
-import Image from "next/image";
+
 import AniText from "../atoms/AniText";
 import Link from "next/link";
+import { TypingText } from "@/components/animations/customText";
+import { motion } from "framer-motion";
+import { staggerContainer } from "../animations/motion";
 
 const HeroComp = () => {
   return (
     <div
-      className={`flex w-full md:flex-[0.8] items-center justify-center p-2 `}
+      className={`flex w-full items-center justify-center p-2 md:flex-[0.8] `}
     >
       <MainWrapper>
         <div className="flex flex-col items-center justify-center pt-40 md:pt-56">
-          <p className="mt-10 font-extrabold tracking-[4px] text-primaryBlue">
-            HEY! I AM
-          </p>
-          <h1 className="mt-3 text-3xl font-extrabold tracking-wide md:text-6xl">
-            M. Ahmed Siddiqui
-          </h1>
+          <motion.p
+          // @ts-ignore
+           variants={staggerContainer}
+           initial="hidden"
+           whileInView="show"
+           viewport={{ once: true, amount: 0.25}}
+          className="mt-10 font-extrabold tracking-[4px] text-primaryBlue">
+          <TypingText title={"HEY! I AM"} textStyles={""} />
+          </motion.p>
+          <motion.div
+          // @ts-ignore
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.25}}
+            className={`mt-3 text-3xl font-extrabold tracking-wide md:text-6xl`}
+          >
+            <TypingText title={"M. Ahmed Siddiqui"} textStyles={""} />
+          </motion.div>
+
           <AniText />
           <button className="rhombus mt-56 flex items-center justify-center px-6 py-6">
             <Link href="#About">

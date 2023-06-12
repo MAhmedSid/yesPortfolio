@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import MainWrapper from "../wrappers/MainWrapper";
@@ -5,8 +6,9 @@ import { Barlow } from "next/font/google";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
 
-
-
+import { motion } from "framer-motion";
+import { fadeIn } from "../animations/motion";
+import { staggerContainer } from "../animations/motion";
 
 const barlowC = Barlow({
   subsets: ["latin"],
@@ -19,16 +21,27 @@ const barlowC = Barlow({
 
 const About = () => {
   return (
-    <div id="About" className="flex justify-center px-4 md:px-0 pt-24 md:pt-0">
+    <motion.div
+      // @ts-ignore
+      variants={staggerContainer}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.25 }}
+      id="About"
+      className="flex justify-center px-4 pt-24 md:px-0 md:pt-0"
+    >
       <MainWrapper>
-        <div className="flex md:h-[100vh] flex-col justify-center">
-          <img
+        <motion.div
+          variants={fadeIn("right", "tween", 0.2, 1)}
+          className="flex flex-col justify-center md:h-[100vh]"
+        >
+          <Image
             src="/profiletwo.webp"
-            // height={0}
-            // width={0}
-            // sizes="100%"
+            height={0}
+            width={0}
+            sizes="100%"
             alt="Muhammad Ahmed Siddiqui"
-            className="pointer-events-none h-[140px] w-[140px] md:h-[200px] md:w-[200px] rounded-full"
+            className="pointer-events-none h-[140px] w-[140px] rounded-full md:h-[200px] md:w-[200px]"
           />
           <h2 className="who-am-i flex flex-col pt-10 text-2xl font-bold">
             Who Am I ?
@@ -59,13 +72,17 @@ const About = () => {
             voluptatum nobis, eius laborum excepturi repellendus quos totam
             earum placeat. Earum expedita sit corporis nemo officiis.
           </p>
-          <div className="flex gap-x-4 text-4xl child-hover:-translate-y-2 child:transition-all child:duration-150">
-            <Link href="https://github.com/MAhmedSid"><FaGithub/></Link>
-            <Link href="https://www.linkedin.com/in/muhammad-ahmed-siddiqui-webdeveloper/"><FaLinkedin/></Link>
+          <div className="flex gap-x-4 text-4xl child:transition-all child:duration-150 child-hover:-translate-y-2">
+            <Link href="https://github.com/MAhmedSid">
+              <FaGithub />
+            </Link>
+            <Link href="https://www.linkedin.com/in/muhammad-ahmed-siddiqui-webdeveloper/">
+              <FaLinkedin />
+            </Link>
           </div>
-        </div>
+        </motion.div>
       </MainWrapper>
-    </div>
+    </motion.div>
   );
 };
 
