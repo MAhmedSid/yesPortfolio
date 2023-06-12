@@ -1,12 +1,13 @@
 "use client";
 import React from "react";
-import MainWrapper from "../wrappers/MainWrapper";
-
-import AniText from "../atoms/AniText";
 import Link from "next/link";
+
 import { TypingText } from "@/components/animations/customText";
-import { motion } from "framer-motion";
 import { staggerContainer } from "../animations/motion";
+import MainWrapper from "../wrappers/MainWrapper";
+import AniText from "../atoms/AniText";
+
+import { motion } from "framer-motion";
 
 const HeroComp = () => {
   return (
@@ -16,20 +17,21 @@ const HeroComp = () => {
       <MainWrapper>
         <div className="flex flex-col items-center justify-center pt-40 md:pt-56">
           <motion.p
-          // @ts-ignore
-           variants={staggerContainer}
-           initial="hidden"
-           whileInView="show"
-           viewport={{ once: true, amount: 0.25}}
-          className="mt-10 font-extrabold tracking-[4px] text-primaryBlue">
-          <TypingText title={"HEY! I AM"} textStyles={""} />
-          </motion.p>
-          <motion.div
-          // @ts-ignore
+            // @ts-ignore
             variants={staggerContainer}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: true, amount: 0.25}}
+            viewport={{ once: true, amount: 0.25 }}
+            className="mt-10 font-extrabold tracking-[4px] text-primaryBlue"
+          >
+            <TypingText title={"HEY! I AM"} textStyles={""} />
+          </motion.p>
+          <motion.div
+            // @ts-ignore
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.25 }}
             className={`mt-3 text-3xl font-extrabold tracking-wide md:text-6xl`}
           >
             <TypingText title={"M. Ahmed Siddiqui"} textStyles={""} />

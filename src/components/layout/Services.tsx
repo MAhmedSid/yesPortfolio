@@ -1,5 +1,6 @@
 import React from "react";
 import { Poppins, Barlow } from "next/font/google";
+
 import ServiceCard from "../atoms/ServiceCard";
 
 const poppins = Poppins({
@@ -26,7 +27,7 @@ const Services = () => {
       id="Services"
       className={`flex flex-col items-center justify-center pt-40 text-center ${poppins.className}`}
     >
-      <h2 className="text-4xl md:text-6xl font-black">Services</h2>
+      <h2 className="text-4xl font-black md:text-6xl">Services</h2>
       <div
         className={`flex flex-col gap-y-3  pt-20 text-center text-xl font-extrabold ${barlowC.className}`}
       >

@@ -1,14 +1,15 @@
 "use client";
-import Image from "next/image";
 import React from "react";
-import MainWrapper from "../wrappers/MainWrapper";
-import { Barlow } from "next/font/google";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import Image from "next/image";
 import Link from "next/link";
+import { Barlow } from "next/font/google";
 
-import { motion } from "framer-motion";
+import MainWrapper from "../wrappers/MainWrapper";
 import { fadeIn } from "../animations/motion";
 import { staggerContainer } from "../animations/motion";
+
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const barlowC = Barlow({
   subsets: ["latin"],

@@ -5,7 +5,7 @@ const SkillCard: React.FC<{ text: string; icon: React.ReactNode }> = ({
   icon,
 }) => {
   return (
-    <div className="w-36 h-40  md:w-52 md:h-56 flex flex-col gap-y-2 items-center justify-center p-8 md:p-3 rounded-md text-primaryBlue hover:text-white hover:bg-primaryBlue shadow-2xl transition-all duration-150 ">
+    <div className="flex h-40  w-36 flex-col items-center justify-center gap-y-2 rounded-md p-8 text-primaryBlue shadow-2xl transition-all duration-150 hover:bg-primaryBlue hover:text-white md:h-56 md:w-52 md:p-3 ">
       {icon}
       <h5 className="text-xl md:text-2xl">{text}</h5>
     </div>

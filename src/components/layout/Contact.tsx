@@ -1,11 +1,13 @@
 "use client";
 import React, { useState } from "react";
+import { Poppins, Barlow } from "next/font/google";
+import Link from "next/link";
+
 import MainWrapper from "../wrappers/MainWrapper";
+
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { Poppins, Barlow } from "next/font/google";
-import Link from "next/link";
 import toast, { Toaster } from "react-hot-toast";
 
 const barlowC = Barlow({
@@ -61,7 +63,7 @@ const Contact = () => {
   const onSubmit = async (data: FormData) => {
     try {
       setLoading(true);
-      const res = await fetch("https://formspree.io/f/mgebjdyj", {
+      const res = await fetch(`https://formspree.io/f/${process.env.NEXT_PUBLIC_FORMSPREE_KEY}`, {
         method: "POST",
         body: JSON.stringify(data),
         headers: {
@@ -83,25 +85,30 @@ const Contact = () => {
   };
 
   return (
-    <div id="Contact" className="flex flex-col pt-36 items-center justify-center">
+    <div
+      id="Contact"
+      className="flex flex-col items-center justify-center pt-36"
+    >
       <MainWrapper>
         <div>
           <Toaster />
         </div>
         <div className="flex w-full flex-col items-center justify-center">
-          <h2 className="mb-8  text-4xl md:text-6xl font-extrabold">Contact Me</h2>
-          <p className="mb-16 text-center text-secondaryBlack w-full px-4 md:w-[70%]">
+          <h2 className="mb-8  text-4xl font-extrabold md:text-6xl">
+            Contact Me
+          </h2>
+          <p className="mb-16 w-full px-4 text-center text-secondaryBlack md:w-[70%]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
             tenetur at corporis repellendus ipsum temporibus, perferendis quam
             in quibusdam commodi!
           </p>
-          <div className="flex w-full flex-col gap-y-16 md:gap-y-0 md:gap-x-6 md:flex-row">
+          <div className="flex w-full flex-col gap-y-16 md:flex-row md:gap-x-6 md:gap-y-0">
             <div className="flex w-full flex-col gap-y-4 px-4">
               <div className="flex gap-x-2">
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="md:h-[100px] md:w-[100px] h-[60px] w-[60px] bg-indigo-50 fill-primaryBlue p-3 md:p-5"
+                    className="h-[60px] w-[60px] bg-indigo-50 fill-primaryBlue p-3 md:h-[100px] md:w-[100px] md:p-5"
                     enableBackground="new 0 0 512 512"
                     viewBox="0 0 24 24"
                   >
@@ -121,7 +128,7 @@ const Contact = () => {
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="md:h-[100px] md:w-[100px] h-[60px] w-[60px] bg-indigo-50  fill-primaryBlue p-3 md:p-5"
+                    className="h-[60px] w-[60px] bg-indigo-50 fill-primaryBlue p-3  md:h-[100px] md:w-[100px] md:p-5"
                     enableBackground="new 0 0 512 512"
                     viewBox="0 0 682.667 682.667"
                   >
@@ -164,7 +171,7 @@ const Contact = () => {
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="md:h-[100px] md:w-[100px] h-[60px] w-[60px] bg-indigo-50  fill-primaryBlue p-3 md:p-5"
+                    className="h-[60px] w-[60px] bg-indigo-50 fill-primaryBlue p-3  md:h-[100px] md:w-[100px] md:p-5"
                     enableBackground="new 0 0 512 512"
                     viewBox="0 0 512.002 512.002"
                   >
@@ -206,7 +213,6 @@ const Contact = () => {
                     id="email"
                     placeholder="Email"
                     autoComplete="disable"
-                
                     {...register("email")}
                   />
                   <p className="h-5 pl-3 text-sm">

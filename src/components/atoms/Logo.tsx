@@ -1,10 +1,19 @@
-import Image from 'next/image'
-import React from 'react'
+import Image from "next/image";
+import React from "react";
 
-const Logo = () =>{
+const Logo = () => {
   return (
-    <Image draggable={false}   src="/logof.png" alt='Ahmed Web Developer Logo' height={0} width={0} sizes='100%' className='w-28 h-14 md:w-32 md:h-16 ml-[5%] md:ml-0 pointer-events-none' priority />
-  )
-}
+    <Image
+      draggable={false}
+      src="/logof.png"
+      alt="Ahmed Web Developer Logo"
+      height={0}
+      width={0}
+      sizes="100%"
+      className="pointer-events-none ml-[5%] h-14 w-28 md:ml-0 md:h-16 md:w-32"
+      priority
+    />
+  );
+};
 
-export default Logo
+export default Logo;
