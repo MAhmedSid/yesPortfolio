@@ -98,9 +98,7 @@ const Contact = () => {
             Contact Me
           </h2>
           <p className="mb-16 w-full px-4 text-center text-secondaryBlack md:w-[70%]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-            tenetur at corporis repellendus ipsum temporibus, perferendis quam
-            in quibusdam commodi!
+          Unlock Your Potential: Seamlessly Connect and Engage with Modern Web Development Expert - Reach Out Today for Unparalleled Support!
           </p>
           <div className="flex w-full flex-col gap-y-16 md:flex-row md:gap-x-6 md:gap-y-0">
             <div className="flex w-full flex-col gap-y-4 px-4">
@@ -198,7 +196,7 @@ const Contact = () => {
                   <input
                     className="w-full bg-indigo-50 p-4   outline-none transition-all duration-100 focus:bg-[#f0f0f0] focus:outline-none"
                     id="name"
-                    autoComplete="disable"
+                    autoComplete="off"
                     placeholder="Name"
                     {...register("name")}
                   />
@@ -212,7 +210,7 @@ const Contact = () => {
                     className="w-full bg-indigo-50 p-4   outline-none transition-all duration-100 focus:bg-[#f0f0f0] focus:outline-none"
                     id="email"
                     placeholder="Email"
-                    autoComplete="disable"
+                    autoComplete="off"
                     {...register("email")}
                   />
                   <p className="h-5 pl-3 text-sm">

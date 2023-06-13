@@ -47,32 +47,55 @@ const About = () => {
           <h2 className="who-am-i flex flex-col pt-10 text-2xl font-bold">
             Who Am I ?
           </h2>
-          <p className={`py-10 text-lg ${barlowC.className}`}>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error,
-            animi! Fuga ipsa vitae molestias autem ex possimus velit eveniet
-            delectus quaerat doloremque! Minima facere voluptatum saepe sint,
-            animi sit earum consequuntur nesciunt alias, adipisci possimus esse
-            dolores fugit corrupti ratione commodi quae maxime sequi. Placeat
-            accusamus nesciunt itaque quos, expedita perspiciatis earum
-            reprehenderit deleniti voluptatibus, impedit error provident odit
-            eius modi facilis molestias illum maiores laborum cum explicabo
-            asperiores laudantium. Saepe accusantium molestias odio expedita
-            dicta obcaecati quibusdam error quidem earum optio ut, cum aut illo
-            voluptatem veritatis ipsum sit, omnis, a fugit! Harum nostrum eius
-            explicabo veritatis sit consectetur dicta unde dolorum adipisci
-            culpa voluptas ullam commodi nemo maxime eos perferendis placeat id
-            temporibus assumenda, pariatur corrupti consequuntur totam aperiam.
-            Porro, quos rerum consequuntur, ratione explicabo, magnam eum
-            sapiente assumenda totam commodi voluptatum sed! Dolorum, architecto
-            maxime facilis dignissimos voluptates sequi fugit atque. Dicta
-            perspiciatis rerum accusantium itaque, ratione ipsam. Nemo
-            repellendus iste facilis illo est, saepe architecto maxime totam
-            commodi consequuntur cupiditate asperiores, earum hic officiis
-            obcaecati impedit maiores. Tempora recusandae quae, modi rem
-            accusantium commodi quod voluptatibus id in voluptas doloribus
-            voluptatum nobis, eius laborum excepturi repellendus quos totam
-            earum placeat. Earum expedita sit corporis nemo officiis.
-          </p>
+          <div className={`py-10 flex flex-col gap-y-4 text-lg ${barlowC.className}`}>
+            <p>
+              I am <span className="font-bold">Muhammad Ahmed Siddiqui</span>, an expert in modern web development and a
+              dedicated member of the Web 3.0 community. With a deep passion for
+              the latest advancements in technology, particularly in the realm
+              of AI, I am committed to helping businesses and individuals thrive
+              in the digital landscape.
+            </p>
+
+            <p>
+              {" "}
+              Through my web development services, I empower clients by
+              harnessing the power of technology to achieve their goals. I
+              specialize in creating websites that are not only visually
+              stunning but also highly functional and user-friendly. By
+              leveraging my skills in HTML, CSS, JavaScript, TypeScript,
+              Node.js, Git, and GraphQL, I ensure that each project is tailored
+              to meet the unique needs and objectives of my clients.
+            </p>
+
+            <p>
+              {" "}
+              As a member of the Web 3.0 community, I am at the forefront of the
+              next generation of the internet, where decentralization,
+              blockchain technology, and enhanced user control are key
+              components. By incorporating Web 3.0 principles into my work, I
+              offer forward-thinking solutions that embrace transparency,
+              security, and user empowerment.
+            </p>
+
+            <p>
+              {" "}
+              By partnering with me, you can benefit from my expertise in
+              creating websites that seamlessly integrate AI technologies,
+              providing personalized and dynamic experiences for your users.
+              Whether you require a captivating landing page, an intuitive
+              e-commerce platform, a feature-rich blog, or a cutting-edge
+              AI-powered application, I have the knowledge and skills to deliver
+              outstanding results.
+            </p>
+
+            <p>
+              {" "}
+              Together, let's embrace the limitless possibilities of Web 3.0 and
+              create digital experiences that are not only remarkable but also
+              help you stay ahead in today's rapidly evolving technological
+              landscape.
+            </p>
+          </div>
           <div className="flex gap-x-4 text-4xl child:transition-all child:duration-150 child-hover:-translate-y-2">
             <Link href="https://github.com/MAhmedSid">
               <FaGithub />
