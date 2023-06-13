@@ -1,34 +1,27 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Personal Site
 
-First, run the development server:
+Every professional needs a well known presence online. I help people to end their absence online. 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+# 💥 TECH Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The most important thing is to choose right stack which can impact everything bit and better.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This peronal website is completely bootstrapped with hyper structured stack.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+NEXT JS v13.5
+Contenful ( headless CMS )
 
-## Learn More
+# 🌐Demo
 
-To learn more about Next.js, take a look at the following resources:
+https://mahmed.vercel.app
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# 🚀Performance Report
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![100% Report Screenshot](./public/report.png)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Checkout the [Report](https://gtmetrix.com/reports/perfectrecipe.vercel.app/8RzhId9l/)
+
+ Give a star if you like this as public, Thank YOUUU!
