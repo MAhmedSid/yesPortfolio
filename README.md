@@ -22,6 +22,6 @@ https://mahmed.vercel.app
 
 ![100% Report Screenshot](./public/report.png)
 
-Checkout the [Report](https://gtmetrix.com/reports/perfectrecipe.vercel.app/8RzhId9l/)
+Checkout the [Report](https://gtmetrix.com/reports/mahmed.vercel.app/0IHA6tAk/)
 
  Give a star if you like this as public, Thank YOUUU!
