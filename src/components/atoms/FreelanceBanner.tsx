@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { Poppins } from "next/font/google";
+import Link from "next/link";
 
 import { Parallax } from "react-parallax";
 
@@ -30,9 +31,11 @@ const FreelanceBanner = () => {
         <p className="w-full text-center text-sm md:w-[40%]">
         Ready to Elevate Your Online Presence? Hire an Expert in AI and Modern Web Development Today!
         </p>
+        <Link href="#Contact">
         <button className="rounded-full  bg-primaryBlue  px-11 py-4  text-sm tracking-widest  transition-all duration-150 hover:text-black ">
           Hire Me
         </button>
+        </Link>
       </div>
     </Parallax>
   );
