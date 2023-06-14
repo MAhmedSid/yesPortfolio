@@ -1,4 +1,4 @@
-"use client"
+
 import Footer from "@/components/atoms/Footer";
 import FreelanceBanner from "@/components/atoms/FreelanceBanner";
 import About from "@/components/layout/About";
@@ -20,10 +20,6 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <GoogleAnalytics
-        strategy="lazyOnload"
-        trackPageViews={{ ignoreHashChange: true }}
-      />
       <main className="flex flex-col">
         <div className="main-background flex h-screen w-full flex-col ">
           <Navbar />
