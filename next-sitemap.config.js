@@ -1,0 +1,1 @@
+module.exports = {siteUrl: 'https://mahmed.vercel.app', generateRobotsTxt: true, changefreq: 'daily', exclude: ['/admin', '/login'], };
