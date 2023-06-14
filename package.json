@@ -25,7 +25,6 @@
     "hamburger-react": "^2.5.0",
     "lucide-react": "^0.223.0",
     "next": "13.4.5",
-    "nextjs-google-analytics": "^2.3.3",
     "pnpm": "^8.6.0",
     "postcss": "8.4.24",
     "react": "18.2.0",
