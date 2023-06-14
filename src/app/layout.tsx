@@ -1,6 +1,8 @@
 import './globals.css'
 import { Poppins } from 'next/font/google'
 
+import { GoogleAnalytics } from "nextjs-google-analytics";
+
 const poppins = Poppins({ subsets: ['latin'], weight:["400","700"],preload:true ,adjustFontFallback: true,style:"normal",fallback: ['system-ui', 'arial']})
 
 export const metadata = {
@@ -15,7 +17,10 @@ export default function RootLayout({
 }) {
   return (
     <html className='scroll-smooth'  lang="en">
-      <body  className={poppins.className}>{children}</body>
+      <body  className={poppins.className}>
+      <GoogleAnalytics strategy="lazyOnload" trackPageViews={{ ignoreHashChange: true }} />
+      {children}
+      </body>
     </html>
   )
 }
