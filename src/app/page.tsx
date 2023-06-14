@@ -1,3 +1,4 @@
+"use client"
 import Footer from "@/components/atoms/Footer";
 import FreelanceBanner from "@/components/atoms/FreelanceBanner";
 import About from "@/components/layout/About";
@@ -8,7 +9,7 @@ import Navbar from "@/components/layout/Navbar";
 import Services from "@/components/layout/Services";
 import Skills from "@/components/layout/Skills";
 import { Metadata } from "next";
-
+import { GoogleAnalytics } from "nextjs-google-analytics";
 
 export const metadata: Metadata = {
   title: "Muhammad Ahmed Siddiqui",
@@ -19,7 +20,10 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-     
+      <GoogleAnalytics
+        strategy="lazyOnload"
+        trackPageViews={{ ignoreHashChange: true }}
+      />
       <main className="flex flex-col">
         <div className="main-background flex h-screen w-full flex-col ">
           <Navbar />
