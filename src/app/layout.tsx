@@ -1,6 +1,6 @@
 import './globals.css'
 import { Poppins } from 'next/font/google'
-
+import React from 'react';
 import { GoogleAnalytics } from "nextjs-google-analytics";
 
 const poppins = Poppins({ subsets: ['latin'], weight:["400","700"],preload:true ,adjustFontFallback: true,style:"normal",fallback: ['system-ui', 'arial']})
