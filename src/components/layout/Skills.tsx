@@ -87,10 +87,6 @@ const Skills = () => {
                       icon={<DiGit className="text-6xl md:text-7xl " />}
                     />
                     <SkillCard
-                      text="GraphQL"
-                      icon={<GrGraphQl className="text-6xl md:text-7xl " />}
-                    />
-                    <SkillCard
                       text="Tailwind"
                       icon={<SiTailwindcss className="text-6xl md:text-7xl " />}
                     />
@@ -118,12 +114,6 @@ const Skills = () => {
                 <div className="flex flex-col gap-y-10">
                   <SkillType firstLetter="H" restWord="eadless CMS" />
                   <div className="grid w-full grid-cols-2 gap-x-5 gap-y-5 md:grid-cols-3">
-                    <SkillCard
-                      text="Wordpress"
-                      icon={
-                        <FaWordpressSimple className="text-6xl md:text-7xl " />
-                      }
-                    />
                     <SkillCard
                       text="Contentful"
                       icon={<SiContentful className="text-6xl md:text-7xl " />}

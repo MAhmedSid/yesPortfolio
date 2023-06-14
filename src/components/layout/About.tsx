@@ -63,7 +63,7 @@ const About = () => {
               specialize in creating websites that are not only visually
               stunning but also highly functional and user-friendly. By
               leveraging my skills in HTML, CSS, JavaScript, TypeScript,
-              Node.js, Git, and GraphQL, I ensure that each project is tailored
+              Node.js, and Git, I ensure that each project is tailored
               to meet the unique needs and objectives of my clients.
             </p>
 
