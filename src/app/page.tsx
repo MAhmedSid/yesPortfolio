@@ -12,7 +12,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Muhammad Ahmed Siddiqui",
   description:
-    "M. Ahmed Siddiqui - Expert in Modern Web Development with Next.js. Experience fast, secure, and cutting-edge website solutions. Specializing in HTML, CSS, JavaScript, React, Next.js, and more. Offering full-stack development services for landing pages, e-commerce sites, blogs, and AI-integrated apps. Contact for unparalleled support.",
+    "M. Ahmed Siddiqui - Expert in Modern Web Development with Next.js and Jamstack. Delivering fast, secure, and cutting-edge website solutions that leverage the power of AI. Proficient in HTML, CSS, JavaScript, React, Next.js, and other web technologies. Offering full-stack development services for landing pages, e-commerce sites, blogs, and AI-integrated apps. Contact for unparalleled support and satisfaction.",
 };
 
 export default function Home() {
