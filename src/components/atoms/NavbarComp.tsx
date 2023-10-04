@@ -10,22 +10,25 @@ import { motion } from "framer-motion";
 
 const NavbarComp: React.FC<{
   links: string[];
-}> = ({ links }) => {
+  width: number;
+}> = ({ links, width }) => {
   return (
     <motion.nav
       variants={navVariants}
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}
-      className="flex w-full flex-[0.1] items-center justify-center  "
+      className={`w-full  items-center justify-between tablet:justify-center px-2 ${
+        width < 768 ? "hidden" : "flex"
+      }`}
     >
       <MainWrapper>
-        <div className="flex md:items-center md:justify-between md:gap-x-5">
+        <div className="flex items-center justify-between gap-x-5">
           <Logo />
-          <ul className="flex items-center gap-x-12">
+          <ul className="flex items-center gap-x-8">
             {links.map((link) => (
               <Link key={link} href={`#${link}`}>
-                <li className="border-b-2  border-b-transparent text-xl tracking-wider hover:border-b-primaryBlue hover:transition-all hover:duration-150 hover:ease-in-out">
+                <li className="border-b-2  border-b-transparent lp:text-xl tracking-wider hover:border-b-primaryBlue hover:transition-all hover:duration-150 hover:ease-in-out">
                   {link}
                 </li>
               </Link>

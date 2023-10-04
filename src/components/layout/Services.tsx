@@ -47,7 +47,7 @@ const Services = () => {
           offer:
         </p>
       </div>
-      <div className="cards-section flex w-full flex-wrap justify-between gap-x-5 gap-y-10 px-2 pt-10 ">
+      <div className="cards-section flex w-full flex-wrap justify-center gap-x-5 gap-y-10 px-2 pt-10 ">
         <ServiceCard
           icon={
             <svg

@@ -10,13 +10,21 @@ const MyWork = async () => {
     { cache: "no-store" }
   );
   const data = await res.json();
+
   const allProjects = data.items;
+
   const ecommerceProjects = data.items.filter(
     (project: any) => project.fields.projType === "ecommerce"
   );
+  
+  const dappProjects = data.items.filter(
+    (project: any) => project.fields.projType === "dapp"
+  );
+
   const businessProjects = data.items.filter(
     (project: any) => project.fields.projType === "business"
   );
+
   const otherProjects = data.items.filter(
     (project: any) =>
       project.fields.projType !== "business" ||
@@ -31,8 +39,8 @@ const MyWork = async () => {
     >
       <h2 className="pb-5 text-4xl font-extrabold md:text-6xl">My Works</h2>
 
-      <Tabs defaultValue="all" className="mt-20 w-full">
-        <TabsList className="flex justify-center bg-transparent ">
+      <Tabs defaultValue="all" className="mt-20 w-full flex justify-center items-center flex-col">
+        <TabsList className="flex w-full justify-center bg-transparent ">
           <TabsTrigger className="bg-transparent" value="all">
             All
           </TabsTrigger>
@@ -42,14 +50,17 @@ const MyWork = async () => {
           <TabsTrigger className="bg-transparent" value="business">
             Business
           </TabsTrigger>
+          <TabsTrigger className="bg-transparent" value="dapp">
+            DAPP
+          </TabsTrigger>
           <TabsTrigger className="bg-transparent" value="others">
             Others
           </TabsTrigger>
         </TabsList>
         <TabsContent
           value="all"
-          className={`grid grid-cols-1 ${
-            allProjects.length === 0 ? "md:grid-cols-1" : "md:grid-cols-3"
+          className={`max-w-[2000px] grid grid-cols-1 ${
+            allProjects.length === 0 ? "tablet:grid-cols-1" : "tablet:grid-cols-2 lp:grid-cols-3"
           }`}
         >
           {allProjects.length === 0 ? (
@@ -58,6 +69,35 @@ const MyWork = async () => {
             </p>
           ) : (
             allProjects.map((project: any) => {
+              const imgObj = projectImgs.find(
+                (img: any) => img.sys.id === project.fields.imgSrc.sys.id
+              );
+              return (
+                <ProjectCard
+                  key={project.sys.id}
+                  imgSrc={imgObj.fields.file.url}
+                  imgAlt={project.fields.imgAlt}
+                  projTitle={project.fields.projTitle}
+                  projType={project.fields.projType}
+                  githubLink={project.fields.githubLink}
+                  visitLink={project.fields.visitLink}
+                />
+              );
+            })
+          )}
+        </TabsContent>
+        <TabsContent
+          value="dapp"
+          className={`grid grid-cols-1 ${
+            dappProjects.length === 0 ? "md:grid-cols-1" : "md:grid-cols-3"
+          }`}
+        >
+          {dappProjects.length === 0 ? (
+            <p className="flex h-[368px] w-full items-center justify-center text-lg">
+              No Projects Yet.
+            </p>
+          ) : (
+            dappProjects.map((project: any) => {
               const imgObj = projectImgs.find(
                 (img: any) => img.sys.id === project.fields.imgSrc.sys.id
               );

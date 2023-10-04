@@ -2,9 +2,9 @@
 import React, { useState } from "react";
 import { Barlow } from "next/font/google";
 
-import { useWindowWidth } from "@react-hook/window-size";
 import NavbarMobComp from "../atoms/NavbarMobComp";
 import NavbarComp from "../atoms/NavbarComp";
+import useClientWindowWidth from "../hooks/useClientWindowWidth";
 
 const links = ["About", "Skills", "Services", "Portfolio", "Contact"];
 
@@ -18,23 +18,21 @@ const barlowC = Barlow({
 });
 
 const Navbar = () => {
-  const width = useWindowWidth();
-  const [sideBarOpen, setSideBarOpen] = useState(false);
+  const width = useClientWindowWidth()
 
-  return (
-    <>
-      {width <= 768 ? (
-        <NavbarMobComp
-          sideBarOpen={sideBarOpen}
-          setSideBarOpen={setSideBarOpen}
-          links={links}
-          barlowC={barlowC}
-        />
-      ) : (
-        <NavbarComp links={links} />
-      )}
-    </>
-  );
+return (
+  <>
+      <NavbarMobComp
+        links={links}
+        barlowC={barlowC}
+        width={width}
+      />
+      <NavbarComp links={links}
+                width={width}
+
+      />
+  </>
+);
 };
 
 export default Navbar;

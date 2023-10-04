@@ -10,15 +10,14 @@ import Skills from "@/components/layout/Skills";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Muhammad Ahmed Siddiqui",
+  title: "Muhammad Ahmed Siddiqui - Headless Cloud Web App Developer",
   description:
-    "M. Ahmed Siddiqui - Expert in Modern Web Development with Next.js and Jamstack. Delivering fast, secure, and cutting-edge website solutions that leverage the power of AI. Proficient in HTML, CSS, JavaScript, React, Next.js, and other web technologies. Offering full-stack development services for landing pages, e-commerce sites, blogs, and AI-integrated apps. Contact for unparalleled support and satisfaction.",
+    "M. Ahmed Siddiqui - Full Stack Developer with Next JS, Cloud, AI, Serverless and Headless Web App Experience. Delivering fast, secure, and cutting-edge website solutions that leverage the power of AI. Proficient in HTML, CSS, JavaScript, React, Next.js, and other web technologies. Offering full-stack development services for modern cloud headless sites, landing pages, e-commerce sites, blogs, and AI-integrated apps. Contact for unparalleled support and satisfaction.",
 };
 
 export default function Home() {
   return (
-    <>
-      <main className="flex flex-col">
+      <main className="w-[100vw] flex flex-col">
         <div className="main-background flex h-screen w-full flex-col ">
           <Navbar />
           <HeroComp />
@@ -32,6 +31,5 @@ export default function Home() {
         <Contact />
         <Footer />
       </main>
-    </>
   );
 }

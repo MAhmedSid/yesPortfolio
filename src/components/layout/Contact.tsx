@@ -87,7 +87,7 @@ const Contact = () => {
   return (
     <div
       id="Contact"
-      className="flex flex-col items-center justify-center pt-36"
+      className="w-full flex flex-col items-center justify-center pt-36"
     >
       <MainWrapper>
         <div>
@@ -97,16 +97,17 @@ const Contact = () => {
           <h2 className="mb-8  text-4xl font-extrabold md:text-6xl">
             Contact Me
           </h2>
-          <p className="mb-16 w-full px-4 text-center text-secondaryBlack md:w-[70%]">
+          <p className="mb-16 w-full px-4 text-center text-secondaryBlack tablet:w-[70%]">
           Unlock Your Potential: Seamlessly Connect and Engage with Modern Web Development Expert - Reach Out Today for Unparalleled Support!
           </p>
-          <div className="flex w-full flex-col gap-y-16 md:flex-row md:gap-x-6 md:gap-y-0">
+
+          <div className="flex w-full flex-col gap-y-16 tablet:flex-row tablet:gap-x-6 lp:gap-y-0">
             <div className="flex w-full flex-col gap-y-4 px-4">
               <div className="flex gap-x-2">
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-[60px] w-[60px] bg-indigo-50 fill-primaryBlue p-3 md:h-[100px] md:w-[100px] md:p-5"
+                    className="h-[60px] w-[60px] bg-indigo-50 fill-primaryBlue p-3  tablet:h-[80px] tablet:w-[80px] lp:h-[100px] lp:w-[100px] tablet:p-5"
                     enableBackground="new 0 0 512 512"
                     viewBox="0 0 24 24"
                   >
@@ -118,7 +119,7 @@ const Contact = () => {
                     ></path>
                   </svg>
                 </div>
-                <p className="flex w-full items-center justify-center text-primaryBlue">
+                <p className="flex w-full items-center text-[11px] lmb:text-base justify-center text-primaryBlue">
                   mahmedsiddiqui333@gmail.com
                 </p>
               </div>
@@ -126,7 +127,7 @@ const Contact = () => {
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-[60px] w-[60px] bg-indigo-50 fill-primaryBlue p-3  md:h-[100px] md:w-[100px] md:p-5"
+                    className="h-[60px] w-[60px] bg-indigo-50 fill-primaryBlue p-3  tablet:h-[80px] tablet:w-[80px] lp:h-[100px] lp:w-[100px] tablet:p-5"
                     enableBackground="new 0 0 512 512"
                     viewBox="0 0 682.667 682.667"
                   >
@@ -169,7 +170,7 @@ const Contact = () => {
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-[60px] w-[60px] bg-indigo-50 fill-primaryBlue p-3  md:h-[100px] md:w-[100px] md:p-5"
+                    className="h-[60px] w-[60px] bg-indigo-50 fill-primaryBlue p-3  tablet:h-[80px] tablet:w-[80px] lp:h-[100px] lp:w-[100px] tablet:p-5"
                     enableBackground="new 0 0 512 512"
                     viewBox="0 0 512.002 512.002"
                   >

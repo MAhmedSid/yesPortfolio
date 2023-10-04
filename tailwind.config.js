@@ -15,6 +15,14 @@ module.exports = {
       },
     },
     extend: {
+      screens: {
+        "mb": "320px",
+        "lmb": "480px",
+        "tablet": "768px",
+        "lp": "1024px",
+        "lcd": "1400px"
+
+      },
       colors: {
         secondaryBlack: "#555555",
         primaryBlue: "#3e64ff",

@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html className='scroll-smooth'  lang="en">
        <GoogleAnalytics GA_TRACKING_ID={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID!} />
-      <body  className={poppins.className}>
+      <body  className={`${poppins.className}`}>
       {children}
       </body>
     </html>

@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 
 import MainWrapper from "../wrappers/MainWrapper";
@@ -9,22 +9,28 @@ import { slide as Menu } from "react-burger-menu";
 import { Sling as Hamburger } from "hamburger-react";
 
 const NavbarMobComp: React.FC<{
-  sideBarOpen: boolean;
-  setSideBarOpen: any;
   links: string[];
   barlowC: any;
-}> = ({ sideBarOpen, setSideBarOpen, links, barlowC }) => {
+  width: number;
+}> = ({ links, barlowC, width }) => {
+  const [sideBarOpen, setSideBarOpen] = useState(false);
   return (
     <>
-      <nav className="flex w-full flex-[0.1] items-center justify-center  ">
+      <nav
+        className={` w-full ${
+          width >= 768
+            ? "hidden"
+            : "flex  items-center justify-center"
+        }`}
+      >
         <MainWrapper>
           <div
-            className={`fixed top-0 z-[3000] flex w-full bg-white py-2 ${
+            className={` fixed top-0 z-[3000] flex justify-between w-full  bg-white py-2 px-2 lmb:px-4 ${
               sideBarOpen ? "" : "bg-opacity-80 backdrop-blur-lg"
             }`}
           >
             <Logo />
-            <div className="ml-[48%]">
+            <div className="">
               <Hamburger
                 color="#3e64ff"
                 toggled={sideBarOpen}

@@ -29,7 +29,7 @@ const About = () => {
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
       id="About"
-      className="flex justify-center px-4 pt-24 md:px-0 md:pt-0"
+      className="flex justify-center px-4 pt-24 md:pt-0"
     >
       <MainWrapper>
         <motion.div
@@ -37,7 +37,7 @@ const About = () => {
           className="flex flex-col justify-center md:h-[100vh]"
         >
           <Image
-            src="/profiletwo.webp"
+            src="/ahmed.webp"
             height={0}
             width={0}
             sizes="100%"

@@ -5,8 +5,8 @@ const Logo = () => {
   return (
     <Image
       draggable={false}
-      src="/logof.png"
-      alt="Ahmed Web Developer Logo"
+      src="/ahmed-logo.png"
+      alt="Full-Stack Web Developer Logo"
       height={0}
       width={0}
       sizes="100%"
