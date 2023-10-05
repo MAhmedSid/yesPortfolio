@@ -28,7 +28,8 @@ const MyWork = async () => {
   const otherProjects = data.items.filter(
     (project: any) =>
       project.fields.projType !== "business" ||
-      project.fields.projType !== "ecommerce"
+      project.fields.projType !== "ecommerce" ||
+      project.fields.projType !== "dapp"
   );
   const projectImgs = data.includes.Asset;
 
