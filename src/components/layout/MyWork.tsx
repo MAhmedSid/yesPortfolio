@@ -26,11 +26,7 @@ const MyWork = async () => {
   );
 
   const otherProjects = data.items.filter(
-    (project: any) =>
-      project.fields.projType !== "business" ||
-      project.fields.projType !== "ecommerce" ||
-      project.fields.projType !== "dapp"
-  );
+    (project: any) => (project.fields.projType !== "dapp" &&  project.fields.projType !== "business" &&  project.fields.projType !== "ecommerce"));
   const projectImgs = data.includes.Asset;
 
   return (
