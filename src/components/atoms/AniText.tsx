@@ -7,11 +7,9 @@ const AniText = () => {
     <p className="mt-4 h-6 text-center text-xl font-extrabold md:text-[32px]">
       <span>Skilled in </span>
       <TypeAnimation
-        defaultValue="Headless Web Apps"
+        defaultValue="JAMStack Web Apps"
         sequence={[
-          "Headless Web Apps.",
-          4000,
-          "Cloud Web Apps.",
+          "JAMStack Web Apps.",
           4000,
           "Next JS Web Apps.",
           4000,

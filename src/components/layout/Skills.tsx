@@ -77,20 +77,12 @@ const Skills = () => {
                       icon={<FaNodeJs className="text-6xl md:text-7xl " />}
                     />
                     <SkillCard
-                      text="Solidity"
-                      icon={<SiSolidity className="text-6xl md:text-7xl " />}
-                    />
-                    <SkillCard
                       text="Tailwind"
                       icon={<SiTailwindcss className="text-6xl md:text-7xl " />}
                     />
                     <SkillCard
                       text="AWS Serverless"
                       icon={<SiAwslambda className="text-6xl md:text-7xl " />}
-                    />
-                    <SkillCard
-                      text="Ethereum"
-                      icon={<FaEthereum className="text-6xl md:text-7xl " />}
                     />
                   </div>
                 </div>
@@ -112,7 +104,7 @@ const Skills = () => {
                 </div>
               </Element>
 
-              <Element name="section_2" className="section w-full   pb-20">
+              <Element name="section_3" className="section w-full   pb-20">
                 <div className="flex flex-col gap-y-10 px-4">
                   <SkillType firstLetter="H" restWord="eadless CMS" />
                   <div className="grid w-full grid-cols-1 place-items-center   gap-x-5 gap-y-5 lmb:grid-cols-2 tablet:grid-cols-2 lp:grid-cols-3">
@@ -128,7 +120,7 @@ const Skills = () => {
                 </div>
               </Element>
 
-              <Element name="section_2" className="section w-full   pb-20">
+              <Element name="section_4" className="section w-full   pb-20">
                 <div className="flex flex-col gap-y-10 px-4">
                   <SkillType firstLetter="D" restWord="atabases" />
                   <div className="grid w-full grid-cols-1 place-items-center   gap-x-5 gap-y-5 lmb:grid-cols-2 tablet:grid-cols-2 lp:grid-cols-3">

@@ -34,7 +34,7 @@ const About = () => {
       <MainWrapper>
         <motion.div
           variants={fadeIn("right", "tween", 0.2, 1)}
-          className="flex flex-col justify-center md:h-[100vh]"
+          className="flex flex-col justify-center py-20"
         >
           <Image
             src="/ahmed.webp"
@@ -49,11 +49,7 @@ const About = () => {
           </h2>
           <div className={`py-10 flex flex-col gap-y-4 text-lg ${barlowC.className}`}>
             <p>
-              I am <span className="font-bold">Muhammad Ahmed Siddiqui</span>, an expert in modern web development and a
-              dedicated member of the Web 3.0 community. With a deep passion for
-              the latest advancements in technology, particularly in the realm
-              of AI, I am committed to helping businesses and individuals thrive
-              in the digital landscape.
+              I am <span className="font-bold">Muhammad Ahmed Siddiqui</span>, I am a Professional Web developer with the most modern stack which provides scalability and allows me to effectively use AI and modern techs together.
             </p>
 
             <p>
@@ -62,20 +58,19 @@ const About = () => {
               harnessing the power of technology to achieve their goals. I
               specialize in creating websites that are not only visually
               stunning but also highly functional and user-friendly. By
-              leveraging my skills in HTML, CSS, JavaScript, TypeScript,
-              Node.js, and Git, I ensure that each project is tailored
+              leveraging my skills in JAM Stack, Next JS, TypeScript,
+              Node.js, and Cloud, I ensure that each project is tailored
               to meet the unique needs and objectives of my clients.
             </p>
 
             <p>
               {" "}
-              As a member of the Web 3.0 community, I am at the forefront of the
-              next generation of the internet, where decentralization,
-              blockchain technology, and enhanced user control are key
-              components. By incorporating Web 3.0 principles into my work, I
-              offer forward-thinking solutions that embrace transparency,
-              security, and user empowerment.
+              With a passion for learning and experience in business with startup, I am constantly seeking new opportunities to improve my skills. Currently, I'm investigating Python, NLP, and GAI to advance my development abilities. I have also built a foundation in business development to understand the importance of websites for business. 
+              
+              
             </p>
+
+            <p>   {" "}As a developer and lifelong learner, I also constantly work on architecture and designs for standing in the SAAS market especially for eCommerce. Whether working on internal projects or consulting for clients, I am committed to delivering high-quality and practical results that meet the needs of the customer.</p>
 
             <p>
               {" "}
@@ -90,17 +85,14 @@ const About = () => {
 
             <p>
               {" "}
-              Together, let's embrace the limitless possibilities of Web 3.0 and
-              create digital experiences that are not only remarkable but also
-              help you stay ahead in today's rapidly evolving technological
-              landscape.
+              Now, we are living in the AI era, And I use to best AI toolsets and Cloud Architecture which are the most cost-effective, faster, and secure than any other. I work on JAM Stack and modern development frameworks. It's a complete package for end-to-end development with high-quality tested code.
             </p>
           </div>
           <div className="flex gap-x-4 text-4xl child:transition-all child:duration-150 child-hover:-translate-y-2">
             <Link href="https://github.com/MAhmedSid">
               <FaGithub />
             </Link>
-            <Link href="https://www.linkedin.com/in/muhammad-ahmed-siddiqui-webdeveloper/">
+            <Link href="https://www.linkedin.com/in/jamstack-web-developer-react-next-js-expert/">
               <FaLinkedin />
             </Link>
           </div>
