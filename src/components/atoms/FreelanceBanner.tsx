@@ -29,8 +29,7 @@ const FreelanceBanner = () => {
           I'm <span className="text-[#a0f669]">Available</span> for freelancing
         </h3>
         <p className="w-full text-center text-sm md:w-[40%]">
-          Ready to Elevate Your Online Presence? Hire an Expert in AI and Modern
-          Web Development Today!
+          Ready to Elevate Your Online Presence? Connect and get Free Consultation today with a Modern Web/App freelancer.
         </p>
         <Link href="#Contact">
           <button className="rounded-full  bg-primaryBlue  px-11 py-4  text-sm tracking-widest  transition-all duration-150 hover:text-black ">

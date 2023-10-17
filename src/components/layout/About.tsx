@@ -49,7 +49,7 @@ const About = () => {
           </h2>
           <div className={`py-10 flex flex-col gap-y-4 text-lg ${barlowC.className}`}>
             <p>
-              I am <span className="font-bold">Muhammad Ahmed Siddiqui</span>, I am a Professional Web developer with the most modern stack which provides scalability and allows me to effectively use AI and modern techs together.
+              I am <span className="font-bold">Muhammad Ahmed Siddiqui</span>, I am a Professional Web App Developer and Freelancer with the most modern stack which provides scalability and allows me to effectively use AI and modern techs together.
             </p>
 
             <p>

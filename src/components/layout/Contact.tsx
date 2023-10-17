@@ -98,7 +98,7 @@ const Contact = () => {
             Contact Me
           </h2>
           <p className="mb-16 w-full px-4 text-center text-secondaryBlack tablet:w-[70%]">
-          Unlock Your Potential: Seamlessly Connect and Engage with Modern Web Development Expert - Reach Out Today for Unparalleled Support!
+          Unlock Your Potential: Seamlessly Connect and Engage with Expert in Modern Stack - Reach Out Today for Unparalleled Support!
           </p>
 
           <div className="flex w-full flex-col gap-y-16 tablet:flex-row tablet:gap-x-6 lp:gap-y-0">
