@@ -253,6 +253,7 @@ const Contact = () => {
                     autoComplete="off"
                     placeholder="Message"
                     {...register("message")}
+                    maxLength={2000}
                   />
                   <p className="h-5 pl-3 text-sm">
                     {errors.message && errors.message.message}
