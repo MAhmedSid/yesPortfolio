@@ -98,7 +98,7 @@ const Contact = () => {
             Contact Me
           </h2>
           <p className="mb-16 w-full px-4 text-center text-secondaryBlack tablet:w-[70%]">
-          Unlock Your Potential: Seamlessly Connect and Engage with Expert in Modern Stack - Reach Out Today for Unparalleled Support!
+          Unlock Your Potential: Seamlessly Connect and Engage with Expert in Modern Stack - Reach Out Today for Unparalleled Support. Do whatsapp for urgent inquiry. Thank you!
           </p>
 
           <div className="flex w-full flex-col gap-y-16 tablet:flex-row tablet:gap-x-6 lp:gap-y-0">
@@ -168,7 +168,7 @@ const Contact = () => {
               </div>
               <div className="flex gap-x-2">
                 <div>
-                  <svg
+                  {/* <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-[60px] w-[60px] bg-indigo-50 fill-primaryBlue p-3  tablet:h-[80px] tablet:w-[80px] lp:h-[100px] lp:w-[100px] tablet:p-5"
                     enableBackground="new 0 0 512 512"
@@ -178,7 +178,22 @@ const Contact = () => {
                       d="M354.338 332.911l38.918-38.918L511.99 412.728l-38.919 38.918zm-22.08 20.342c-22.589 14.787-53.192 12.262-73.038-7.584l-92.883-92.883c-19.846-19.846-22.371-50.45-7.584-73.039L39.144 60.138c-43.677 43.894-51.73 111.966-19.455 164.847a803.745 803.745 0 00267.332 267.332c52.88 32.275 120.952 24.222 164.846-19.455L332.258 353.253zM60.36 38.92L99.276 0l118.735 118.735-38.918 38.918z"
                       data-original="#000000"
                     ></path>
-                  </svg>
+                  </svg> */}
+                   <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="h-[60px] w-[60px] bg-indigo-50 fill-primaryBlue p-3  tablet:h-[80px] tablet:w-[80px] lp:h-[100px] lp:w-[100px] tablet:p-5"
+      enableBackground="new 0 0 512 512"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M17.507 14.307l-.009.075c-2.199-1.096-2.429-1.242-2.713-.816-.197.295-.771.964-.944 1.162-.175.195-.349.21-.646.075-.3-.15-1.263-.465-2.403-1.485-.888-.795-1.484-1.77-1.66-2.07-.293-.506.32-.578.878-1.634.1-.21.049-.375-.025-.524-.075-.15-.672-1.62-.922-2.206-.24-.584-.487-.51-.672-.51-.576-.05-.997-.042-1.368.344-1.614 1.774-1.207 3.604.174 5.55 2.714 3.552 4.16 4.206 6.804 5.114.714.227 1.365.195 1.88.121.574-.091 1.767-.721 2.016-1.426.255-.705.255-1.29.18-1.425-.074-.135-.27-.21-.57-.345z"
+        data-original="#000000"
+      ></path>
+      <path
+        d="M20.52 3.449C12.831-3.984.106 1.407.101 11.893c0 2.096.549 4.14 1.595 5.945L0 24l6.335-1.652c7.905 4.27 17.661-1.4 17.665-10.449 0-3.176-1.24-6.165-3.495-8.411zm1.482 8.417c-.006 7.633-8.385 12.4-15.012 8.504l-.36-.214-3.75.975 1.005-3.645-.239-.375c-4.124-6.565.614-15.145 8.426-15.145a9.865 9.865 0 017.021 2.91 9.788 9.788 0 012.909 6.99z"
+        data-original="#000000"
+      ></path>
+    </svg>
                 </div>
                 <p className="flex w-full items-center justify-center text-primaryBlue">
                   (+92) 333 0233 082

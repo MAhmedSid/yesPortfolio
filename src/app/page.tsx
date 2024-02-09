@@ -39,7 +39,7 @@ export default function Home() {
         <Services />
         {/* @ts-ignore  */}
         <MyWork />
-        <FreelanceBanner />
+        {/* <FreelanceBanner /> */}
         <Contact />
         <Footer />
       </main>

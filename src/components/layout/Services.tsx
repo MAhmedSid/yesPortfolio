@@ -33,25 +33,20 @@ const Services = () => {
       >
         <p className="w-full px-4 md:w-auto md:max-w-[60rem]">
           {" "}
-          Do you want to stand out in the digital world with a modern and
-          professional website? 
+          Do you want to stand out in the digital world with a fast, safe and
+          professional online presence? 
         </p>
-         <p>
-         {" "}
-            Do you need a fullstack web developer who can
-            handle everything from design to deployment?
-         </p>
         <p>-</p>
         <p className={`w-full px-4 md:w-auto md:max-w-[60rem]`}>
           I have the skills and experience to create stunning
-          websites that are blazingly fast, truly secure, and super user-friendly. Whether you need a
-          landing page, an e-commerce platform, a blog, or an{" "}
+          websites that are blazingly fast, truly secure, and super user friendly. Whether you need a
+          landing page, an eCommerce platform, a blog, or an{" "}
           <span className="font-extrabold">AI</span> integrated app. I
           can help you achieve your needs. Find which thing takes you here:
         </p>
       </div>
       <div className="cards-section flex w-full flex-wrap justify-center gap-x-5 gap-y-10 px-2 pt-10 ">
-        <ServiceCard
+        {/* <ServiceCard
           icon={
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -71,8 +66,8 @@ const Services = () => {
           }
           name="Serverless Web App"
           text="Get Serverless apps using cloud services. They are most scalable, cost-efficient, and highly performant."
-        />
-        <ServiceCard
+        /> */}
+        {/* <ServiceCard
           icon={
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -114,8 +109,8 @@ const Services = () => {
           }
           name="Design Development"
           text="Convert your modern designs into deployed app with high quality code."
-        />
-        <ServiceCard
+        /> */}
+        {/* <ServiceCard
           icon={
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -141,7 +136,7 @@ const Services = () => {
           }
           name="AI Integrated App"
           text="Integrate AI into your web app to enhance your site usability"
-        />
+        /> */}
         <ServiceCard
           icon={
             <svg
@@ -174,7 +169,7 @@ const Services = () => {
               </g>
             </svg>
           }
-          name="Custom Website"
+          name="Website Development"
           text="Do you need a very first Website for your online presence?"
         />
         <ServiceCard
@@ -204,7 +199,7 @@ const Services = () => {
               ></path>
             </svg>
           }
-          name="Redevelop your Website"
+          name="Revamp your Website"
           text="Revitalize your website with modern frameworks to make user interactivity seamless."
         />
         <ServiceCard
@@ -227,8 +222,8 @@ const Services = () => {
               ></path>
             </svg>
           }
-          name="SEO Optimization"
-          text="Boost your business with cutting-edge website enhancements and functionalities, Let me assist you!"
+          name="Website SEO Optimization"
+          text="Get rid of slow performance scores with cutting edge website enhancements and seo functionalities, Let me assist you!"
         />
       </div>
     </div>
